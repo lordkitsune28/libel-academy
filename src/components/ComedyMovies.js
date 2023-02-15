@@ -1,26 +1,37 @@
 import React, { useState } from 'react'
 
-export const ActionsMovies = () => {
+export const ComedyMovies = () => {
+    const [part11, setPart11] = useState("d-inline-flex ms-5")
+    const [part22, setPart22] = useState("d-none")
 
-    const [part1, setPart1] = useState("d-inline-flex ms-5")
-    const [part2, setPart2] = useState("d-none")
+    let respuesta2;
+    const evaluar2 = (e) => {
+        respuesta2 = e.target.value
 
-    let respuesta;
-    const evaluar = (e) => {
-        respuesta = e.target.value
-
-        if (respuesta === "atras") {
-            setPart1("d-inline-flex ms-5 part");
-            setPart2("d-none part");
-        } else if (respuesta === "adelante") {
-            setPart2("d-inline-flex ms-5 part");
-            setPart1("d-none part");
+        if (respuesta2 === "atras") {
+            setPart11("d-inline-flex ms-5 part");
+            setPart22("d-none part");
+        } else if (respuesta2 === "adelante") {
+            setPart22("d-inline-flex ms-5 part");
+            setPart11("d-none part");
         }
     }
-
     return (
-        <div className='actions'>
+        <div className='comedy'>
             <div className="row cont p-5">
+                <div className='col cont py-5'>
+                    <div className='control w-75'>
+                        <hr className='w-25' />
+                        <h2 className='w-75 fw-bold'>Funniest Comedy Movies of 2018</h2>
+
+                        <button type="button" className="btn" value={"atras"} onClick={(e) => evaluar2(e)}>&lt;</button>
+                        <button type="button" className="btn" value={"adelante"} onClick={(e) => evaluar2(e)}>&gt;</button>
+
+                        <hr className='mt-5' />
+
+                        <p>VIEW ALL &gt;</p>
+                    </div>
+                </div>
                 <div className='col cont p-5'>
                     <div className='filtro mx-auto ps-5'>
                         <button type="button" className="btn d-inline mx-3">Today</button>
@@ -35,7 +46,7 @@ export const ActionsMovies = () => {
 
                     </div>
                     <div className='carrusel'>
-                        <div id='part1' className={part1}>
+                        <div id='part1' className={part11}>
                             <div className="card w-25 mx-1 bg-transparent">
                                 <img src="https://res.cloudinary.com/donoutoby/image/upload/v1676487030/download_eszcvp.jpg" class="card-img-top" alt='den of thieves' />
                                 <div>
@@ -81,7 +92,7 @@ export const ActionsMovies = () => {
                             </div>
 
                         </div>
-                        <div id='part2' className={part2}>
+                        <div id='part2' className={part22}>
                             <div className="card w-25 mx-1 bg-transparent">
                                 <img src="https://res.cloudinary.com/donoutoby/image/upload/v1676487030/download_eszcvp.jpg" class="card-img-top" alt='den of thieves' />
                                 <div>
@@ -128,20 +139,6 @@ export const ActionsMovies = () => {
                         </div>
 
 
-                    </div>
-                </div>
-
-                <div className='col cont py-5'>
-                    <div className='control w-75'>
-                        <hr className='w-25' />
-                        <h2 className='w-75 fw-bold'>Action & Drama Movies</h2>
-
-                        <button type="button" className="btn" value={"atras"} onClick={(e) => evaluar(e)}>&lt;</button>
-                        <button type="button" className="btn" value={"adelante"} onClick={(e) => evaluar(e)}>&gt;</button>
-
-                        <hr className='mt-5' />
-
-                        <p>VIEW ALL &gt;</p>
                     </div>
                 </div>
             </div>

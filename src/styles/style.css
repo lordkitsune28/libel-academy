@@ -60,3 +60,73 @@
         color: white;
         margin-right: 1rem;
     }
+
+    .card {
+        width: 7rem !important;
+        font-size: 10px !important;
+    }
+
+    .card h5 {
+        font-size: 14px !important;
+    }
+
+    .comedy {
+        background-color: #0f131d;
+    }
+
+    @media screen and (max-width:820px) {
+        .banner{
+            margin: 0px !important;
+        }
+
+        #a {
+            margin: 0px !important;
+        }
+
+        #b {
+            display: none;
+        }
+
+        .banner button {
+            width: 8rem;
+        }
+
+        .banner p {
+            width: 50% !important;
+        }
+
+        .filtro button {
+            margin: 0px !important;
+        }
+
+        .cont {
+            margin: 3px;
+            padding: 0px !important;
+            display: block;
+        }
+
+        .carrusel {
+            display: block !important;
+        }
+
+        #part1,
+        #part2,
+        #part11,
+        #part22 {
+            margin: 0px !important;
+        }
+
+        .control {
+            display: block !important;
+        }
+
+        .card {
+            width: 5.7rem !important;
+            font-size: 10px !important;
+        }
+
+        .card h5 {
+            font-size: 14px !important;
+        }
+
+    }
