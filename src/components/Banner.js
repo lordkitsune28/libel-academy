@@ -14,7 +14,7 @@ export const Banner = () => {
 
                 </div>
                 <div className='col w-100'>
-                    <img src="https://res.cloudinary.com/donoutoby/image/upload/v1676474339/icono_jj5b6j.png" class="w-75" alt="icono de reproductor" />
+                    <img src="https://res.cloudinary.com/donoutoby/image/upload/v1676474339/icono_jj5b6j.png" className="w-75" alt="icono de reproductor" />
                 </div>
             </div>
         </div>
