@@ -22,15 +22,17 @@ export const ActionsMovies = () => {
                     </div>
                 </div>
                 <div className='col py-5'>
-                    <hr className='' />
-                    <h2>Action & Drama Movies</h2>
-                    
-                    <button type="button" class="btn btn-primary"> &lt; </button>
-                    <button type="button" class="btn btn-primary"> &gt; </button>
+                    <div className='control w-75'>
+                        <hr className='w-25' />
+                        <h2 className='w-75 fs-1 fw-bold'>Action & Drama Movies</h2>
 
-                    <hr className='' />
+                        <button type="button" class="btn"> &lt; </button>
+                        <button type="button" class="btn"> &gt; </button>
 
-                    <p>VIEW ALL &gt;</p>
+                        <hr className='mt-5' />
+
+                        <p>VIEW ALL &gt;</p>
+                    </div>
                 </div>
             </div>
         </div>

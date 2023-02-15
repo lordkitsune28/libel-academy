@@ -1,53 +1,62 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans', sans-serif;
-}
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Noto Sans', sans-serif;
+    }
 
-body {
-    background-color: #131722;
-    color: white;
-}
+    body {
+        background-color: #131722;
+        color: white;
+    }
 
-.banner {
-    width: 100%;
-    background-color: #262b3a;
-    margin: 0px;
-}
+    .banner {
+        width: 100%;
+        background-color: #262b3a;
+        margin: 0px;
+    }
 
-.banner button{
-    padding: 20px;
-    font-size: 10px;
-    width: 10rem;
-}
+    .banner button {
+        padding: 20px;
+        font-size: 10px;
+        width: 10rem;
+    }
 
-.banner #watch{
-    background-color: #24baef;
-    border: none;
-}
+    .banner #watch {
+        background-color: #24baef;
+        border: none;
+    }
 
-.banner p{
-    font-size: 15px;
-}
+    .banner p {
+        font-size: 15px;
+    }
 
-.banner h1, .banner button{
-    font-weight: bold;
-}
+    .banner h1,
+    .banner button {
+        font-weight: bold;
+    }
 
-.filtro button{
-    background-color: transparent;
-    border: none;
-    color: white;
-}
+    .filtro button {
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
 
-.filtro button:hover {
-    background-color: transparent;
-    color: #24baef !important;
-}
+    .filtro button:hover {
+        background-color: transparent;
+        color: #24baef !important;
+    }
 
-.filtro button:focus {
-    background-color: transparent;
-    color: #24baef !important;
-}
+    .filtro button:focus {
+        background-color: transparent;
+        color: #24baef !important;
+    }
+
+    .control button {
+        background-color: transparent;
+        border: white solid 1px;
+        border-radius: 100%;
+        color: white;
+        margin-right: 1rem;
+    }
