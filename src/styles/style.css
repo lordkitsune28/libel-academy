@@ -35,3 +35,19 @@ body {
 .banner h1, .banner button{
     font-weight: bold;
 }
+
+.filtro button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.filtro button:hover {
+    background-color: transparent;
+    color: #24baef !important;
+}
+
+.filtro button:focus {
+    background-color: transparent;
+    color: #24baef !important;
+}
